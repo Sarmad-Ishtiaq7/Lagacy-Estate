@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sarmad Ishtiaq">
+    <meta name="author" content="About the Traveling Insight">
+    <link rel="shortcut icon" href="/assert/img/icon.png" type="image/x-icon">
+    <title>Legacy Estates</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                            class="bi bi-x-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="#about-us">About</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+                <li><a href="#contact">Book Now</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="#Slider">Legacy Estates</a></li>
+                <li class="hideOnMobile"><a href="#about-us">About</a></li>
+                <li class="hideOnMobile"><a href="#packages">Packages</a></li>
+                <li class="hideOnMobile"><a href="#faqs">FAQs</a></li>
+                <li class="hideOnMobile"><a href="#contact">Book Now</a></li>
+                <li class="hideOnMobile"><a href="#contact-us">Contact Us</a></li>
+                <li onclick="showSidebar()">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                            class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--Our Content Here -->
+        <section class="slider" id="Slider">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="/assert/img/cover4.webp" alt="Modern Homes">
+                            <div class="slide-text">
+                                <h2>Experience Modern Living</h2>
+                                <p>Discover breathtaking architecture and stylish interiors designed for comfort and
+                                    elegance.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="/assert/img/chelsea1.webp" alt="Luxury Lifestyle">
+                            <div class="slide-text">
+                                <h2>Luxury at Every Step</h2>
+                                <p>Indulge in high-end amenities and premium living spaces that redefine luxury.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="/assert/img/cover5.webp" alt="Urban Elegance">
+                            <div class="slide-text">
+                                <h2>Your Dream Home Awaits</h2>
+                                <p>Find the perfect balance of sophistication and convenience in the heart of the city.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="/assert/img/cover6.webp" alt="Nature’s Escape">
+                            <div class="slide-text">
+                                <h2>Live Closer to Nature</h2>
+                                <p>Wake up to scenic views and fresh air with our exclusive nature-inspired homes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add navigation buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </section>
+
+        <div class="separation"></div>
+        <section id="about-us">
+            <div class="about">
+                <div class="about-text">
+                    <h2>From Cozy Apartments to Luxury Estates</h2>
+                    <p>Seamless home buying and selling with expert guidance and market insights.</p>
+                </div>
+
+                <div class="about-media">
+                    <img src="/assert/videos/Camera-1.png" alt="Camera">
+                    <video src="/assert/videos/Hero-Section.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+        </section>
+        <div class="seperation"></div>
+        <section id="contact">
+            <h1>Find Your Dream Home Today!</h1>
+            <form action="https://httpbin.org/post" method="POST" id="contact-form">
+                <div>
+                    <input type="email" name="email" placeholder="Enter Email Address" required>
+                    <button type="submit">Book Now</button>
+                </div>
+            </form>
+        </section>
+        <div class="seperation"></div>
+        <div class="separation"></div>
+        <div class="tabs-container" id="packages">
+            <div class="tab-card active" onclick="showPackage(0)">Essential</div>
+            <div class="tab-card" onclick="showPackage(1)"> Premium</div>
+            <div class="tab-card" onclick="showPackage(2)">Luxury</div>
+        </div>
+
+        <!-- Package Cards -->
+        <div class="package-card active">
+            <img src="/assert/img/viade1.webp" alt="Essential Package">
+            <div class="package-details">
+                <h3>Essential Package</h3>
+                <p>Perfect for first-time home buyers, this package includes affordable and comfortable housing options
+                    with essential amenities.</p>
+            </div>
+        </div>
+
+        <div class="package-card">
+            <img src="/assert/img/viabellota1.webp" alt="Premium Package">
+            <div class="package-details">
+                <h3>Premium Package</h3>
+                <p>For those seeking a bit more luxury, this package includes high-end finishes, spacious layouts, and
+                    modern designs.</p>
+            </div>
+        </div>
+
+        <div class="package-card">
+            <img src="/assert/img/lajolla1.webp" alt="Luxury Package">
+            <div class="package-details">
+                <h3>Luxury Package</h3>
+                <p>The ultimate in luxury living! This package offers premium locations, state-of-the-art architecture,
+                    and exclusive amenities.</p>
+            </div>
+            <div class="seperation"></div>
+        </div>
+        <section class="faq" id="faqs">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faqbox">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>How do I start searching for my dream home?</span>
+                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M12 4V20" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M4 12H20" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="faq-answer">
+                    <p>Start by identifying your needs and preferences, such as location, budget, home size, and
+                        amenities. </p>
+                    <p>Use online real estate platforms, visit open houses, and consult with a real estate agent for
+                        expert guidance.</p>
+                </div>
+            </div>
+
+            <div class="faqbox">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>What factors should I consider before buying a home?</span>
+                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M12 4V20" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M4 12H20" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="faq-answer">
+                    <p>Key factors include location, budget, home size, neighborhood safety, school districts, commute
+                        time, and future property value</p>
+                </div>
+            </div>
+            <div class="faqbox">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span> Do I need a real estate agent to find my dream home?</span>
+                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M12 4V20" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M4 12H20" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="faq-answer">
+                    <p>While it's not mandatory, a real estate agent can simplify the process by providing expert
+                        advice, negotiating deals, and handling paperwork, making your home-buying experience smoother
+                        and more efficient.</p>
+                </div>
+            </div>
+            <div class="faqbox">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>How can I check if a home is within my budget?</span>
+                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M12 4V20" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M4 12H20" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="faq-answer">
+                    <p> Calculate your monthly mortgage payments, consider additional costs like property taxes,
+                        maintenance, and insurance, and get pre-approved for a loan to determine how much you can afford
+                        before making an offer.</p>
+                </div>
+            </div>
+            <div class="faqbox">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span> How do I know if a neighborhood is right for me?</span>
+                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M12 4V20" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M4 12H20" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="faq-answer">
+                    <p>Research crime rates, school ratings, transportation, amenities, and future development plans</p>
+                    <p>Visit the area at different times of the day and talk to local residents to get a better sense of
+                        the community.</p>
+                </div>
+            </div>
+            <div class="faqbox">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span> What should I look for in a home inspection?</span>
+                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M12 4V20" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M4 12H20" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="faq-answer">
+                    <p>A home inspection should check for issues like foundation cracks, roof damage, plumbing leaks,
+                        electrical problems, HVAC efficiency, and mold</p>
+                    <p> Always hire a licensed home inspector before finalizing your purchase.</p>
+                </div>
+            </div>
+            <div class="faqbox">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>How can I negotiate the best price for a home?</span>
+                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M12 4V20" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M4 12H20" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="faq-answer">
+                    <p>Research market prices in the area, be prepared to make a competitive offer, and highlight any
+                        necessary repairs as negotiation points</p>
+                    <p>A real estate agent can help you craft a strong negotiation strategy.</p>
+                </div>
+            </div>
+            <div class="faqbox">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>What documents do I need when buying a house?</span>
+                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M12 4V20" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M4 12H20" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="faq-answer">
+                    <p>You'll need documents such as proof of income, bank statements, pre-approval letter, credit
+                        report. </p>
+                    <p>Also you need loan application, purchase agreement, home inspection report, and closing
+                        disclosure.</p>
+                </div>
+            </div>
+        </section>
+        <div class="separation"></div>
+    </main>
+    <footer id="contact-us">
+        <div class="footer-container">
+            <!-- Contact Info -->
+            <div class="footer-info">
+                <h2>Contact Us</h2>
+                <p>Looking to buy or sell a property? Get in touch with us today!</p>
+
+                <div class="info-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Office Address</h3>
+                        <p>1234 Dream Homes St, Los Angeles, CA 90001</p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>(123) 456-7890</p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>contact@luxuryhomes.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="footer-form">
+                <h2>Send a Message</h2>
+                <form>
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email" required>
+
+                    <label>Message</label>
+                    <textarea placeholder="Tell us about your property needs..." required></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="seperation"></div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Legacy Estates. All rights reserved.</p>
+        </div>
+
+
+
+    </footer>
+    <!-- swiper js for swiper slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,797 @@
+/* Import Roboto Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Remove Default Styling */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling the Body of Page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000;
+}
+
+/* Styling the Navbar */
+nav {
+    background: linear-gradient(90deg, #ff4081, #00bcd4);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto' sans-serif;
+    font-size: 24px;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+nav a:hover {
+    background: linear-gradient(90deg, #ff4081, #00bcd4);
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    font-family: 'Roboto' sans-serif;
+    font-size: 24px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+/* slider */
+
+.swiper-slide {
+    position: relative;
+    text-align: center;
+}
+
+.slide-content {
+    position: relative;
+    width: 100%;
+}
+
+.slide-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Text Overlay */
+.slide-text {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    max-width: 80%;
+}
+
+.slide-text h2 {
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+.slide-text p {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Separation line */
+.separation {
+    margin: 40px auto;
+    height: 10px;
+    background-color: #ffffff;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 80vw;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    flex-direction: row;
+}
+
+/* Text Section */
+.about-text {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+}
+
+/* About Section's Heading Styling */
+.about-text>h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 50px;
+    gap: 20px;
+}
+
+/* About Section's video Styling */
+.about-text>p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+
+/*  (Video + Camera) adjustment */
+.about-media {
+    position: relative;
+    width: 35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Camera Image */
+.about-media img {
+    width: 100%;
+    display: block;
+}
+
+/* Video Inside Camera Screen */
+.about-media video {
+    position: absolute;
+    width: 47%;
+    height: 35%;
+    top: 47%;
+    left: 50%;
+    transform: translate(-81%, -6%);
+    border-radius: 4px;
+    object-fit: cover;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling Tabs & Card Styling*/
+#Packages {
+    margin-top: 50px;
+    text-align: center;
+    background-color: white;
+}
+
+/* Tabs Styling */
+.tabs-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.tab-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 180px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid transparent;
+}
+
+.tab-card:hover,
+.tab-card.active {
+    border-color: #007bff;
+    background: linear-gradient(90deg, #ff4081, #00bcd4);
+    color: white;
+}
+
+/* Package Card */
+.package-card {
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.package-card.active {
+    display: block;
+}
+
+.package-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* Faqs Section Styling */
+.faq {
+    background-image: url(/assert/img/viabellota1.webp);
+    font-family: 'Roboto', sans-serif;
+    background: black;
+    color: white;
+    padding: 34px;
+    max-width: 60vw;
+    margin: auto;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.faqbox {
+    background-color: #2d2d2d;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #414141;
+    cursor: pointer;
+}
+
+.faq-answer {
+    font-size: 24px;
+    padding: 0 25px;
+    background: #1c1c1c;
+    max-height: 0;
+    overflow: hidden;
+    margin-bottom: 5px;
+    transition: max-height 0.4s e ease-in-out, padding 0.4s ease-in-out;
+}
+
+.faqbox.active .faq-answer {
+    max-height: 500px;
+    padding: 20px;
+}
+
+.faqbox .icon {
+    transition: transform 0.3s ease;
+}
+
+.faqbox.active .icon {
+    transform: rotate(45deg);
+}
+
+/* Book Now */
+#contact {
+    height: 80vh;
+    background-image: url(./assert/img/bg-img.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding: 23px;
+    text-align: center;
+    padding: 0 30px;
+
+}
+
+#contact> :nth-child(1) {
+    font-weight: 900;
+    font-size: 70px;
+    gap: 20px;
+}
+
+#contact input {
+    padding: 3px 27px;
+    color: white;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.2)
+}
+
+input::placeholder {
+    color: white;
+}
+
+
+
+button {
+    padding: 3px 27px;
+    font-size: 20px;
+    border-radius: 10px;
+    gap: 17px;
+    color: white;
+    background-color: black;
+}
+
+/* Footer Styling */
+footer {
+    background: url('/assert/img/bg-img.webp') no-repeat center center/cover;
+    color: #fff;
+    padding: 60px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
+}
+
+.footer-info {
+    font-family: 'Roboto', sans-serif;
+    flex: 1;
+    padding-right: 20px;
+}
+
+.footer-info h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #ff4081, #00bcd4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-info p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.info-box {
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.info-box:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+}
+
+.info-box i {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #00bcd4;
+}
+
+.footer-form {
+
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.footer-form h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    background: linear-gradient(90deg, #00bcd4, #ff4081);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-info h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-info h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+
+.footer-form form {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-form label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.footer-form input,
+.footer-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.footer-form textarea {
+    height: 100px;
+}
+
+
+/* Stylish Button */
+button {
+    background: linear-gradient(45deg, #00bcd4, #ff4081);
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    padding: 12px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(255, 64, 129, 0.4);
+}
+
+/* Copyright Section */
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff !important;
+    padding: 15px;
+    border-top: 2px solid rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+/* Responsiveness of Navbar*/
+@media (max-width:800px) {
+    .hideOnMobile {
+        display: none;
+    }
+}
+
+@media (max-width:400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+/* sliders responsiveness */
+@media (max-width: 1024px) {
+    .slide-text {
+        max-width: 85%;
+        bottom: 10%;
+    }
+
+    .slide-text h2 {
+        font-size: 40px;
+    }
+
+    .slide-text p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slide-text {
+        padding: 10px 15px;
+        max-width: 90%;
+        bottom: 8%;
+    }
+
+    .slide-text h2 {
+        font-size: 30px;
+    }
+
+    .slide-text p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .slide-text {
+        padding: 8px 12px;
+        max-width: 95%;
+        bottom: 5%;
+    }
+
+    .slide-text h2 {
+        font-size: 22px;
+    }
+
+    .slide-text p {
+        font-size: 14px;
+    }
+}
+
+/* About us Section Responsiveness */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 80vw;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    flex-direction: row;
+}
+
+/* Text Section */
+.about-text {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+}
+
+/* Heading */
+.about-text>h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 50px;
+    margin-bottom: 15px;
+}
+
+.about-text>p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+/* Media Section */
+.about-media {
+    position: relative;
+    width: 35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Camera Image */
+.about-media img {
+    width: 100%;
+    display: block;
+}
+
+/* Video Inside Camera Screen */
+.about-media video {
+    position: absolute;
+    width: 47%;
+    height: 35%;
+    top: 47%;
+    left: 50%;
+    transform: translate(-81%, -6%);
+    border-radius: 4px;
+    object-fit: cover;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Set up About Us Responsiveness  */
+@media (max-width: 1024px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .about-text {
+        width: 90%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-media {
+        width: 80%;
+    }
+
+    .about-text>h2 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .about-text>p {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .about-text>h2 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .about-text>p {
+        font-size: 18px;
+    }
+
+    .about-media {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        gap: 20px;
+    }
+
+    .about-text>h2 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .about-text>p {
+        font-size: 16px;
+    }
+
+    .about-media {
+        width: 95%;
+    }
+
+    .about-media video {
+        width: 50%;
+        height: 40%;
+    }
+}
+
+/* Set up Faqs Responsiveness  */
+@media (max-width: 1024px) {
+    .faq {
+        max-width: 90vw;
+        padding: 20px;
+    }
+
+    .faq h2 {
+        font-size: 36px;
+    }
+
+    .faq-question {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .faq-answer {
+        font-size: 20px;
+        padding: 0 15px;
+    }
+
+    .faqbox .icon {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq h2 {
+        font-size: 28px;
+    }
+
+    .faq-question {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .faq-answer {
+        font-size: 18px;
+        padding: 0 12px;
+    }
+
+    .faqbox .icon {
+        font-size: 18px;
+    }
+}
+
+
+/* footer responsiveness */
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
